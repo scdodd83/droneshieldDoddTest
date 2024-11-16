@@ -77,7 +77,7 @@ pip install pytest-playwright
 2. Install `Playwright` browsers:
 
 ```
-$ playwright install
+playwright install
 ```
 
 3. Make sure you have installed it correctly, and it's up to date:
