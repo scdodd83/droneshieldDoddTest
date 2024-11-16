@@ -28,7 +28,8 @@ sudo apt install pip
 This should install `pip`. You can confirm this by running the following command:
 
 ```
-pip --version
+$ pip --version
+pip 22.0.2
 ```
 
 Confirm that you have the latest version available.
@@ -42,14 +43,15 @@ sudo apt install python3
 This should install the latest version of `Python3`. You can confirm this by running the following command:
 
 ```
-python3 --version
+$ python3 --version
+Python 3.10.12
 ```
 
 Confirm that you have the latest version available.
 
 ### INSTALLATION
 
-The `Pytest` installtion instructions can be found [here](https://docs.pytest.org/en/stable/getting-started.html) if you would like a reference to follow.
+The `Pytest` installation instructions can be found [here](https://docs.pytest.org/en/stable/getting-started.html) if you would like a reference to follow.
 
 1. To install `pip` run the following command in the command line:
 
@@ -75,13 +77,14 @@ pip install pytest-playwright
 2. Install `Playwright` browsers:
 
 ```
-playwright install
+$ playwright install
 ```
 
 3. Make sure you have installed it correctly, and it's up to date:
 
 ```
-playwright --version
+$ playwright --version
+Version 1.48.0
 ```
 
 Confirm you have installed it correctly and it's up to date.
