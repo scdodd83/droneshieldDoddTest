@@ -89,4 +89,57 @@ Version 1.48.0
 
 Confirm you have installed it correctly and it's up to date.
 
+### CLONE THE REPO
+
+Now that everything is installed correctly you can run the automation suite it's time to clone the repo:
+
+1. Open a terminal.
+
+2. Navigate to wherever you'd like to clone. 
+
+```
+cd wherever/you/want/to/go
+```
+
+3. Clone the repo.
+
+```
+git clone https://github.com/scdodd83/droneshieldDoddTest.git
+```
+
 ### USAGE
+
+#### HEADLESS
+
+Headless mode just runs without the browser opening. Everything should be installed and ready. To run the test scripts:
+
+1. Open a terminal.
+
+2. Navigate to where you cloned the repo
+
+```
+cd navigate/to/where/you/went
+```
+
+3. To run the entire suite in headless mode:
+
+```
+pytest
+```
+
+4.  Observe the magic.
+
+#### HEADED
+
+ Headed mode opens a browser and shows you what's going on. To run the script in headed mode, run this in the terminal:
+
+1. Run this command in the command line: 
+
+```
+pytest --headed
+```
+
+2. More magic, but this time with movement!
+
+You can now observe it doing everything in a browser, but it's likely too quick to garner any real feel for what it's doing. It's just an option if you like to see things happening.
+
