@@ -17,7 +17,7 @@ The tests will cover all pages within the `saucedemo` domain, including, but not
 
 ## METHODOLOGY
 
-We will be using **FRAMEWORK** to complete the tests. The tests are to be written in python at the client's request, and a report will be provided after each testing run.
+We will be using Playwright and PyTest to complete the tests. The tests are to be written in python at the client's request, and a report will be provided after each testing run.
 
 # TEST-PLANS
 
