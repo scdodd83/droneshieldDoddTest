@@ -8,11 +8,11 @@ def test_cart(page: Page):
 
     # Enter username.
     page.get_by_placeholder("Username").click()
-    page.get_by_placeholder("Username").fill("standard_user")
+    page.locator("#user-name").fill("standard_user")
 
     # Enter password.
     page.get_by_placeholder("Password").click()
-    page.get_by_placeholder("Password").fill("secret_sauce")
+    page.locator("#password").fill("secret_sauce")
 
     # Click login button.
     page.locator("#login-button").click()

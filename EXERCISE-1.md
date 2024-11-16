@@ -74,4 +74,17 @@ We will be using Playwright and PyTest to complete the tests. The tests are to b
 
 # DECISIONS AND REASONS
 
-Here's my reasoning.
+I have written out a full regression test suite above for the `saucedemo` UI. From there I went through and wrote a succession of scripts that covered all the regressive points above. Multiple points above are handled per script, so there fewer scripts than there are regression test points above.
+
+I went with Playwright and Pytest as the framework for a number of reasons:
+
+* Pytest is robust and well supported driver and test runner.
+* Playwright has a wide array of options in their test libraries for python.
+* Pytest and Playwright work well together and there is ample documentation on how to use the two together.
+* Installation and use are simple, so it cuts down on initial user setup.
+
+And last, but not least...
+
+* I've never written in python before, and this had the most friendly entrance to success.
+
+That last point wasn't a deal breaker for me. Most of my experience is with node.js, but I took a day or so to play around with python and was able to come up with a pretty user friendly set of scripts. I thought about responding and asking if the "We use python for scripting" rule was a hard necessity, but I liked the idea of the challenge. The downside of all this is that I'm sure there are points and methods that are not as optimal as they could be, but everything works and they work consistently. I'll take it as a win.
