@@ -1,14 +1,11 @@
 import re
-from playwright.sync_api import Page, expect
-
-def test_has_title(page: Page):
-    page.goto("https://www.saucedemo.com/")
-
-    # Expect a title "to contain" a substring.
-    expect(page).to_have_title(re.compile("Swag Labs"))
+from playwright.sync_api import Page, expect, sync_playwright
 
 def test_login_error(page: Page):
     page.goto("https://www.saucedemo.com/")
+    expect(page).to_have_title(re.compile("Swag Labs"))
+
+# Login:    
 
     # Enter username.
     page.get_by_placeholder("Username").click()
