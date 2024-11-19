@@ -6,7 +6,7 @@ The purpose of the doc is to complete the technical test for Droneshield with sa
 
 ## METHODOLOGY
 
-For this testing suite we have chosen the `Pytest` and `Playwright` frameworks for both the UI and API tests. These were chosen for a number of reasons, most of which are expressed in the [EXERCISE-1.md](https://github.com/scdodd83/droneshieldDoddTest/blob/main/EXERCISE-1.md) and [EXERCISE-2.md](https://github.com/scdodd83/droneshieldDoddTest/blob/main/EXERCISE-2.md) files found in this repo.
+For this testing suite I have chosen the `Pytest` and `Playwright` frameworks for both the UI and API tests. These were chosen for a number of reasons, most of which are expressed in the [EXERCISE-1.md](https://github.com/scdodd83/droneshieldDoddTest/blob/main/EXERCISE-1.md) and [EXERCISE-2.md](https://github.com/scdodd83/droneshieldDoddTest/blob/main/EXERCISE-2.md) files found in this repo.
 
 ## GETTING STARTED
 
