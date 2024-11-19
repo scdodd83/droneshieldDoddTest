@@ -38,9 +38,7 @@ def test_post_new_pet_fail(api_request_context: APIRequestContext) -> None:
       "status": "available"
     }
 
-    new_pet = api_request_context.post(
-        f"pet", data=data
-    )
+    new_pet = api_request_context.post(f"pet", data=data)
 
     assert new_pet.status == 405, f"Unexpected Status: {new_pet.status}"    
 
