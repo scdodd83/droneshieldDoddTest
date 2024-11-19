@@ -1,4 +1,5 @@
 import re
+import creds
 from playwright.sync_api import Page, expect, sync_playwright
 
 def test_item_details(page: Page):
@@ -8,11 +9,11 @@ def test_item_details(page: Page):
 
     # Enter username.
     page.get_by_placeholder("Username").click()
-    page.get_by_placeholder("Username").fill("standard_user")
+    page.get_by_placeholder("Username").fill(creds.username)
 
     # Enter password.
     page.get_by_placeholder("Password").click()
-    page.get_by_placeholder("Password").fill("secret_sauce")
+    page.get_by_placeholder("Password").fill(creds.password)
 
     # Click login button.
     page.locator("#login-button").click()

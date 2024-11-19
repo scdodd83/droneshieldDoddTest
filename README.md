@@ -91,7 +91,7 @@ Confirm you have installed it correctly and it's up to date.
 
 ### CLONE THE REPO
 
-Now that everything is installed correctly you can run the automation suite it's time to clone the repo:
+Now that everything is installed correctly it's time to clone the repo:
 
 1. Open a terminal.
 
