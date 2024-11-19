@@ -21,9 +21,7 @@ def api_request_context(
 def test_get_pet_by_status(api_request_context: APIRequestContext) -> None:
     data = {"status": "available"}
     
-    get_pet = api_request_context.get(
-        f"pet/findByStatus", data=data
-    )
+    get_pet = api_request_context.get(f"pet/findByStatus", data=data)
 
     # Check for success response
     assert get_pet.status == 200

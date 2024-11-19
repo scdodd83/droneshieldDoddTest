@@ -1,5 +1,7 @@
 import os
 import requests
+import json
+import base64
 from typing import Generator
 import pytest
 from playwright.sync_api import Playwright, APIRequestContext
@@ -19,9 +21,33 @@ def api_request_context(
     yield request_context
     request_context.dispose()
 
+def test_post_new_pet_ok(api_request_context: APIRequestContext) -> None:
+    data = {
+      "id": 77002,
+      "category": {
+        "id": 0,
+        "name": "Best Doggos"
+      },
+      "name": "Pippin",
+      "photoUrls": [
+        "string"
+      ],
+      "tags": [
+        {
+          "id": 0,
+          "name": "string"
+        }
+      ],
+      "status": "available"
+    }
+
+    response = api_request_context.post(f"pet", data=data)
+
+    assert response.status == 200    
+
 def test_post_pet_pic() -> None:
 
-    url = "https://petstore.swagger.io/v2/pet/uploadFile"
+    url = "https://petstore.swagger.io/v2/pet/77002/uploadImage"
     file_path = "docs/smallPic.jpg"
 
     with open(file_path, "rb") as image_file:

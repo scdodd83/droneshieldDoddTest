@@ -21,9 +21,7 @@ def api_request_context(
 def test_get_store_inventory(api_request_context: APIRequestContext) -> None:
     data = {}
 
-    get_inventory = api_request_context.get(
-        f"store/inventory", data=data
-    )
+    get_inventory = api_request_context.get(f"store/inventory", data=data)
 
     # Check for success response
     assert get_inventory.status == 200

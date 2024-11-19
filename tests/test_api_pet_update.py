@@ -38,9 +38,7 @@ def test_update_pet(api_request_context: APIRequestContext) -> None:
         "status": "available"
         }
     
-    update_pet = api_request_context.put(
-        f"pet", data=data
-    )
+    update_pet = api_request_context.put(f"pet", data=data)
 
     # Check for success response
     response_data = update_pet.json()
