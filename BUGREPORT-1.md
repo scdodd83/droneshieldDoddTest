@@ -16,7 +16,7 @@ The shirt's name is showing incorrectly. Note, if the user selects the shirt lin
 ### Expected:
 All items in the store front are displayed with the correct names.
 
-![Store Listing](tests/docs/incorrectName.png "Incorrect Store Listing")
+![Store Listing](tests/docs/incorrectStoreListing.png "Incorrect Store Listing")
 
 ![Details Page](tests/docs/incorrectName.png "Incorrect Item Name")
 
