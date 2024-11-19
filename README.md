@@ -109,6 +109,40 @@ git clone https://github.com/scdodd83/droneshieldDoddTest.git
 
 ### USAGE
 
+A note on running the scripts: I did not want to hard code the credentials into the scripts. I know they were for testing purposes and largely irrelevant, but for the purposes of guaging flow and structure choice I opted to create a separate credentials file. Normally this file would be given to you separately, but to make things easier I'm going to give you the file name, placement, and payload.
+
+#### CREDENTIALS:
+
+1. Open the terminal and navigate to `tests`.
+
+```
+cd wherever/you/went/.../tests
+```
+
+2. Create the credentials file.
+```
+touch creds.py
+```
+
+3. Open the `creds.py` file in the editor of your choice.
+
+4. Add the following lines:
+
+```
+# Stored credential file
+
+username = "standard_user"
+lockedout = "locked_out_user"
+password = "secret_sauce"
+
+api_user = "tester42"
+api_pass = "terriblemethod"
+```
+
+5. Save.
+
+This should create a `creds.py` file in the `droneshieldDoddTest/tests` directory. This will be necessary to run the scripts successfully.
+
 #### HEADLESS
 
 Headless mode just runs without the browser opening. Everything should be installed and ready. To run the test scripts:
